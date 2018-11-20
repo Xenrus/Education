@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    `use strict`;
+
+    let a = parseInt(prompt(`Введите количество денег, которое хотите положить в банк`));
+    let b = a % 10;
+
+    if (b === 1) {
+        alert("Вы внесли " + (a) + " рубль")
+    } else if (b === 2 || b === 3 || b === 4) {
+        alert("Вы внесли " + (a) + " рубля")
+    } else {
+        alert("Вы внесли " + (a) + " рублей")
+    }
+
+
+</script>
+
+
+</body>
+</html>
