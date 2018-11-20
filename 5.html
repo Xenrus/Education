@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    "use strict";
+
+    let arg1 = +prompt("введите первое число");
+    let arg2 = +prompt("введите второе число");
+    let operation = prompt("какую операцию хотите выполнить?");
+
+    alert("в результате получится " + (mathOperation(arg1, arg2, operation)));
+
+    /**
+     * Функция по полученному от пользователя параметру operation определяет какую математическую операцию провести с
+     * параметрами arg1 и arg2, проводит эту операцию и возвращает число, получившееся в результате операции.
+     * @param {number} arg1 - первое число, вводимое пользователем, с которым функция проводит математическую операцию.
+     * @param {number} arg2 - второе число, вводимое пользователем, с которым функция проводит математическую операцию.
+     * @param {string} operation - название операции, вводимое пользователем, которую функция будет проводить с числами
+     * arg1 и arg2.
+     * @returns {number} - результат, который получится в результате операции с числами arg1 и arg2.
+     */
+
+    function mathOperation(arg1, arg2, operation) {
+        switch (operation) {
+            case "умножение" :
+                return arg1 * arg2;
+            case "сложение" :
+                return arg1 + arg2;
+            case "вычитание" :
+                return arg1 - arg2;
+            case "деление" :
+                return arg1 / arg2;
+        }
+    }
+
+
+</script>
+
+
+</body>
+</html>
